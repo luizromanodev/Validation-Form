@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Validação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Formulário de Validação</h1>
+    <form id="validationForm">
+      <!-- Name -->
+      <p>Nome</p>
+      <input type="text" id="name" name="name" maxlength="100" placeholder="Digite seu nome:">
+      <span id="nameError" class="error"></span>
+
+      <!-- Email -->
+      <p>Email</p>
+      <input type="text" id="email" name="email" placeholder="Digite seu email:">
+      <span id="emailError" class="error"></span>
+
+      <!-- Phone -->
+      <p>Telefone com DDD</p>
+      <input type="text" id="phone" name="phone" placeholder="(99) 99999-9999">
+      <span id="phoneError" class="error"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
